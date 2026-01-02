@@ -169,9 +169,22 @@ st.markdown("""
 Welcome to **INSECTIFICA**  
 AI-powered insect & pest identification system.
 """)
-
+st.markdown(
+    """
+    <h3 style="cursor:pointer; color:#1f77b4;">
+        👉 Proceed to Classification
+    </h3>
+    <script>
+        const header = document.querySelector('h3');
+        header.onclick = function() {
+            window.location.href = '/Classification';
+        }
+    </script>
+    """,
+    unsafe_allow_html=True
+)
 st.link_button(
-    label="🚀 Open INSECTIFICA Web App",
+    label="🚀INSECTIFICA ",
     url="https://insect-app-6jeerhx4hcx9zw3pyqzt9n.streamlit.app",
     use_container_width=True
 )
