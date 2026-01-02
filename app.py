@@ -160,18 +160,18 @@ st.set_page_config(
     layout="centered"
 )
 
+import streamlit as st
+
 st.title("🐞 INSECTIFICA 🔍")
 st.subheader("AI-Powered Insect & Pest Identification")
 
 st.markdown("""
-Welcome to **INSECTIFICA**.
-
-👉 Use the **sidebar** to navigate:
-- Home  
-- About  
-- Workflow  
-- Features  
-- Contact
+Welcome to **INSECTIFICA**  
+AI-powered insect & pest identification system.
 """)
 
-st.success("Select a page from the sidebar 👈")
+st.link_button(
+    label="🚀 Open INSECTIFICA Web App",
+    url="https://insect-app-6jeerhx4hcx9zw3pyqzt9n.streamlit.app",
+    use_container_width=True
+)
