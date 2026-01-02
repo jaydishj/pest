@@ -168,7 +168,7 @@ Designed for **students, farmers, researchers, and nature enthusiasts**.
 
 st.divider()
 st.link_button(
-    label="🚀 Open INSECTIFICA Web App",
+    label="🚀Open INSECTIFICA",
     url="https://insect-app-6jeerhx4hcx9zw3pyqzt9n.streamlit.app",
     use_container_width=True
 )
