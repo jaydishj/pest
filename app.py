@@ -1,5 +1,45 @@
 import streamlit as st
 st.markdown("""
+<style>
+[data-testid="stToolbar"] {display: none !important;}
+</style>
+""", unsafe_allow_html=True)
+
+hide_streamlit_elements = """
+    <style>
+    /* Hide the main hamburger menu */
+    #MainMenu {visibility: hidden !important;}
+    
+    /* Hide the toolbar (new in recent versions) */
+    .stToolbar {display: none !important;}
+    
+    /* Hide Deploy button */
+    .stDeployButton {display: none !important;}
+    
+    /* Hide header bar */
+    header {visibility: hidden !important;}
+    
+    /* Hide footer ("Made with Streamlit") */
+    footer {visibility: hidden !important;}
+    
+    /* Extra safety for any new elements */
+    [data-testid="stToolbar"] {display: none !important;}
+    [data-testid="manage-app-button"] {display: none !important;}
+    </style>
+"""
+st.markdown(hide_streamlit_elements, unsafe_allow_html=True)
+
+# Optional: make the page look even cleaner
+
+
+st.markdown("""
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+    </style>
+""", unsafe_allow_html=True)
+st.markdown("""
     <style>
         /* --------------------------------------------------
            GLOBAL APP THEME
